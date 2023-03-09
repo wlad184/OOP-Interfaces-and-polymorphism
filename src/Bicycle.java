@@ -1,5 +1,8 @@
-public class Bicycle {
-    private String modelName;
+public class Bicycle extends ServiceStation{
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
+   /* private String modelName;
     private int wheelsCount;
 
     public Bicycle(String modelName, int wheelsCount) {
@@ -21,7 +24,7 @@ public class Bicycle {
 
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
-    }
+    }*/
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");

@@ -1,5 +1,8 @@
-public class Truck {
-    private String modelName;
+public class Truck extends ServiceStation {
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
+    /*private String modelName;
    private int wheelsCount;
 
     public Truck(String modelName, int wheelsCount) {
@@ -21,7 +24,7 @@ public class Truck {
 
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
-    }
+    }*/
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
