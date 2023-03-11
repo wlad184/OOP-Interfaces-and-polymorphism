@@ -22,7 +22,7 @@ public abstract class Transport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-    public  void updateTyre(){}
+    public  void updateTyre(){System.out.println("  Меняем покрышку");}
     public  void checkEngine(){}
-    public  void checkTrailer(){}
+   public  void checkTrailer(){}
 }
