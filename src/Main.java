@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        ServiceStation[] stations  = new ServiceStation[]{
+        Transport[] transports  = new Transport[]{
                 new Car("car1", 4),
                 new Car("car2", 4),
                 new Truck("truck1", 6),
@@ -21,8 +21,8 @@ public class Main {
         ServiceStation bicycle2 = new Bicycle("bicycle2", 2);*/
 
         ServiceStation station = new ServiceStation();
-        for (int i = 0; i < stations.length; i++) {
-            station.check(stations[i]);
+        for (int i = 0; i < transports.length; i++) {
+            station.check(transports[i]);
         }
 
         /*station.check(car, null, null);

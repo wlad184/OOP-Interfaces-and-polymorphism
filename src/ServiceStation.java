@@ -1,22 +1,12 @@
-public class ServiceStation {
-    private String modelName;
-    private int wheelsCount;
+public class ServiceStation{
 
-    public ServiceStation(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
-    }
-
-    public ServiceStation() {
-    }
-
-    public static void check(ServiceStation mashin) {
-        System.out.println("Обслуживаем " + mashin.modelName);
-        for (int i = 0; i < mashin.wheelsCount; i++) {
-            mashin.updateTyre();
+    public static void check(Transport transports) {
+        System.out.println("Обслуживаем " + transports.getModelName());
+        for (int i = 0; i < transports.getWheelsCount(); i++) {
+            transports.updateTyre();
         }
-        mashin.checkEngine();
-        mashin.checkTrailer();
+        transports.checkEngine();
+        transports.checkTrailer();
 
 
         /*if (car != null) {
@@ -40,15 +30,15 @@ public class ServiceStation {
         }*/
     }
 
-    public void updateTyre() {
-        /*System.out.println("Меняем покрышку");*/
+    /*public void updateTyre() {
+
     }
 
     public void checkEngine() {
-        /*System.out.println("Проверяем двигатель");*/
+
     }
 
     public void checkTrailer() {
-        /*System.out.println("Проверяем прицеп");*/
-    }
+
+    }*/
 }
